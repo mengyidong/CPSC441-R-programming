@@ -1,5 +1,5 @@
 ---
-title: "HW2"
+title: "HW2 - Mengyi Dong"
 output: html_document
 ---
 ```{r}
