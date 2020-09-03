@@ -19,6 +19,9 @@ a = c(1:100)
 a
 sum(a)/100
 ```
+```{r}
+install.packages("dplyr")
+```
 
 ```{r}
 object1 <- c("A", "B", "C", "D", "D", "E", "F", "G")
