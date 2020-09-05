@@ -4,7 +4,7 @@ author: "Mengyi Dong"
 output: html_document
 ---
 ```{r}
-## 2*x + 5*y == 33
+## 2*x + 5*y = 33
 ## x + 3y = 19
 ## Solve x and y
 a <- c(2, 5, 1, 3)
