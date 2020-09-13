@@ -36,7 +36,7 @@ Average(Maize)
 
 ```{r}
 ##Save a file with the name of the variable "Entity"
-new_data <- data.frame(data, "Entity")
+new_data <- data["Entity"]
 write.table(x = new_data, file = "new_data.txt")
 View(new_data)
 ```
