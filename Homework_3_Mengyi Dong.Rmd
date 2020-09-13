@@ -1,0 +1,42 @@
+---
+title: "Homework_3_Mengyi Dong"
+author: "MengyiDong"
+date: "9/13/2020"
+output: html_document
+---
+
+```{r}
+# Write a function to calculate the mean.
+calculate_mean <- c(1,2,3,4,5,6,7,8,9,10)
+Average <- function(calculate_mean){
+  convert_mean <- (sum(calculate_mean)/length(calculate_mean))
+    return(convert_mean)
+}
+Average(calculate_mean)
+```
+
+```{r}
+##Download the following dataset and use it for questions 2-4.
+getwd()
+setwd("/Users/Mengyi/Desktop/class_notes/W3")
+data<- read.csv("key_crop_yields.csv",header = TRUE)
+names(data)
+```
+
+```{r}
+# The range (first and last) of the variable Year.
+range(data["Year"])
+```
+
+```{r}
+## Using the function from #1, calculate the mean of the variable "Maize (tonnes per hectare)".  TIP: When there is missing data (NA), the functions mean, sum, and others, will result in NA. The solution to obtain the desired result is either remove all NAs or use the option na.rm = TRUE (see "?sum").
+Maize <- data$Maize..tonnes.per.hectare[!is.na(data$Maize..tonnes.per.hectare)]
+Average(Maize)
+```
+
+```{r}
+##Save a file with the name of the variable "Entity"
+new_data <- data.frame(data, "Entity")
+write.table(x = new_data, file = "new_data.txt")
+View(new_data)
+```
