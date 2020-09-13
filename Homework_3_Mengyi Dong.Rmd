@@ -18,7 +18,7 @@ Average(calculate_mean)
 ```{r}
 ##Download the following dataset and use it for questions 2-4.
 getwd()
-setwd("/Users/Mengyi/Desktop/class_notes/W3")
+setwd("/Users/Mengyi/Desktop/CPSC441 class_note/W3")
 data<- read.csv("key_crop_yields.csv",header = TRUE)
 names(data)
 ```
